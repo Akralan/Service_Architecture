@@ -1,0 +1,2415 @@
+!SESSION 2024-12-09 08:51:15.906 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=22.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-09 08:51:18.840
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-09 08:51:48.074
+!MESSAGE Logback config file: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-09 08:51:56.254
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\alixc'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-12-10 08:33:30.519 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-10 08:33:34.142
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-10 08:34:02.054
+!MESSAGE Logback config file: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 4 4 2024-12-10 08:34:02.563
+!MESSAGE Invalid workspace location to be set for Edge browser.
+!STACK 0
+java.net.URISyntaxException: Illegal character in path at index 44: file:/C:/Users/alixc/Desktop/INSA/5A/Service Architecture/.metadata/.plugins/org.eclipse.swt
+	at java.base/java.net.URI$Parser.fail(URI.java:2995)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3166)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3248)
+	at java.base/java.net.URI$Parser.parse(URI.java:3196)
+	at java.base/java.net.URI.<init>(URI.java:645)
+	at java.base/java.net.URL.toURI(URL.java:1220)
+	at org.eclipse.ui.internal.Workbench.setEdgeDataDirectory(Workbench.java:530)
+	at org.eclipse.ui.internal.Workbench.<init>(Workbench.java:461)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:598)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-10 08:34:10.378
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\alixc'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 08:44:19.958
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 08:44:19.968
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-10 08:48:43.259
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-10 08:48:43.260
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-10 08:48:43.261
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-10 08:48:43.262
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-10 08:48:43.267
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-10 08:48:43.271
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 08:52:36.444
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 08:52:36.451
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 08:52:55.511
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 08:52:55.518
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 08:53:12.046
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 08:53:12.052
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 08:54:04.703
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 08:54:04.708
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 08:54:05.946
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 08:54:05.949
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:00:09.249
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:00:09.256
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:00:26.204
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:00:26.207
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:00:38.787
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:00:38.790
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:01:04.721
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:01:04.724
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:02:48.012
+!MESSAGE The POM for mysql:mysql-connector-java:jar:8.0.34 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:02:50.725
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:02:50.730
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:02:51.303
+!MESSAGE The POM for mysql:mysql-connector-java:jar:8.0.34 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-12-10 10:02:51.706
+!MESSAGE Could not download sources for mysql:mysql-connector-java:8.0.34
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact mysql:mysql-connector-java:jar:sources:8.0.34
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing mysql:mysql-connector-java:jar:sources:8.0.34
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2024-12-10 10:02:51.706
+!MESSAGE Could not resolve artifact mysql:mysql-connector-java:jar:sources:8.0.34
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2024-12-10 10:02:51.706
+!MESSAGE Missing mysql:mysql-connector-java:jar:sources:8.0.34
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:02:52.017
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:02:52.021
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:24.253
+!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:24.344
+!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.071
+!MESSAGE SLF4J: No SLF4J providers were found.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.072
+!MESSAGE SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.072
+!MESSAGE SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.394
+!MESSAGE Exception in thread "main" org.apache.cxf.tools.common.ToolException: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.395
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:410)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.396
+!MESSAGE at org.apache.cxf.tools.common.toolspec.ToolRunner.runTool(ToolRunner.java:105)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.396
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:113)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.397
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:86)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.397
+!MESSAGE at org.apache.cxf.maven_plugin.wsdl2java.ForkOnceWSDL2Java.main(ForkOnceWSDL2Java.java:51)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.397
+!MESSAGE Caused by: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.397
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:99)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.398
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.build(WSDLDefinitionBuilder.java:71)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.398
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.398
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:61)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.398
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.processWsdl(WSDLToJavaContainer.java:187)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.399
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:156)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.399
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:402)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.399
+!MESSAGE ... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.400
+!MESSAGE Caused by: javax.wsdl.WSDLException: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.400
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2198)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.400
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2390)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.400
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2422)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.401
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.loadDefinition(WSDLManagerImpl.java:266)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.401
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.getDefinition(WSDLManagerImpl.java:165)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.401
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:80)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.402
+!MESSAGE ... 10 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.402
+!MESSAGE Caused by: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.402
+!MESSAGE at java.base/java.io.FileInputStream.open0(Native Method)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.403
+!MESSAGE at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.403
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.403
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.403
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.404
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.404
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:654)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.404
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.405
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.405
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.405
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.405
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.406
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.406
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2188)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.407
+!MESSAGE ... 15 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.482
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:31.486
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.431
+!MESSAGE SLF4J: No SLF4J providers were found.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.431
+!MESSAGE SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.432
+!MESSAGE SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.749
+!MESSAGE Exception in thread "main" org.apache.cxf.tools.common.ToolException: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.750
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:410)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.750
+!MESSAGE at org.apache.cxf.tools.common.toolspec.ToolRunner.runTool(ToolRunner.java:105)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.750
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:113)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.750
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:86)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.751
+!MESSAGE at org.apache.cxf.maven_plugin.wsdl2java.ForkOnceWSDL2Java.main(ForkOnceWSDL2Java.java:51)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.751
+!MESSAGE Caused by: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.751
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:99)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.751
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.build(WSDLDefinitionBuilder.java:71)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.752
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.752
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:61)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.752
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.processWsdl(WSDLToJavaContainer.java:187)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.752
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:156)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.753
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:402)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.753
+!MESSAGE ... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.753
+!MESSAGE Caused by: javax.wsdl.WSDLException: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.754
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2198)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.754
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2390)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.754
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2422)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.754
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.loadDefinition(WSDLManagerImpl.java:266)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.755
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.getDefinition(WSDLManagerImpl.java:165)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.755
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:80)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.755
+!MESSAGE ... 10 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.755
+!MESSAGE Caused by: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.756
+!MESSAGE at java.base/java.io.FileInputStream.open0(Native Method)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.756
+!MESSAGE at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.756
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.756
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.757
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.757
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.757
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:654)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.758
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.758
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.758
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.759
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.759
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.759
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.759
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2188)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.760
+!MESSAGE ... 15 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.802
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:33.804
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.589
+!MESSAGE SLF4J: No SLF4J providers were found.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.589
+!MESSAGE SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.590
+!MESSAGE SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.919
+!MESSAGE Exception in thread "main" org.apache.cxf.tools.common.ToolException: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.920
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:410)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.920
+!MESSAGE at org.apache.cxf.tools.common.toolspec.ToolRunner.runTool(ToolRunner.java:105)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.920
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:113)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.921
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:86)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.921
+!MESSAGE at org.apache.cxf.maven_plugin.wsdl2java.ForkOnceWSDL2Java.main(ForkOnceWSDL2Java.java:51)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.921
+!MESSAGE Caused by: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.922
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:99)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.922
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.build(WSDLDefinitionBuilder.java:71)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.922
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.923
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:61)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.923
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.processWsdl(WSDLToJavaContainer.java:187)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.923
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:156)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.923
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:402)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.924
+!MESSAGE ... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.924
+!MESSAGE Caused by: javax.wsdl.WSDLException: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.924
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2198)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.925
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2390)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.925
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2422)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.925
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.loadDefinition(WSDLManagerImpl.java:266)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.926
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.getDefinition(WSDLManagerImpl.java:165)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.926
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:80)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.926
+!MESSAGE ... 10 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.926
+!MESSAGE Caused by: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.927
+!MESSAGE at java.base/java.io.FileInputStream.open0(Native Method)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.927
+!MESSAGE at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.927
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.928
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.928
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.928
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.929
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:654)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.929
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.929
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.929
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.930
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.930
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.930
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.930
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2188)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.931
+!MESSAGE ... 15 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.974
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:04:50.977
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:16.956
+!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:17.126
+!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.302
+!MESSAGE SLF4J: No SLF4J providers were found.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.303
+!MESSAGE SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.303
+!MESSAGE SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.621
+!MESSAGE Exception in thread "main" org.apache.cxf.tools.common.ToolException: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.622
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:410)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.622
+!MESSAGE at org.apache.cxf.tools.common.toolspec.ToolRunner.runTool(ToolRunner.java:105)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.622
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:113)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.623
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:86)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.623
+!MESSAGE at org.apache.cxf.maven_plugin.wsdl2java.ForkOnceWSDL2Java.main(ForkOnceWSDL2Java.java:51)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.623
+!MESSAGE Caused by: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.623
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:99)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.624
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.build(WSDLDefinitionBuilder.java:71)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.624
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.624
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:61)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.624
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.processWsdl(WSDLToJavaContainer.java:187)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.625
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:156)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.625
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:402)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.625
+!MESSAGE ... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.626
+!MESSAGE Caused by: javax.wsdl.WSDLException: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.626
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2198)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.626
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2390)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.626
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2422)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.627
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.loadDefinition(WSDLManagerImpl.java:266)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.627
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.getDefinition(WSDLManagerImpl.java:165)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.627
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:80)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.627
+!MESSAGE ... 10 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.628
+!MESSAGE Caused by: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.628
+!MESSAGE at java.base/java.io.FileInputStream.open0(Native Method)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.628
+!MESSAGE at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.628
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.628
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.629
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.629
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.630
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:654)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.630
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.630
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.631
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.631
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.632
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.632
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.633
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2188)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.633
+!MESSAGE ... 15 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.712
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:18.715
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:20.818
+!MESSAGE SLF4J: No SLF4J providers were found.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:20.819
+!MESSAGE SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:20.820
+!MESSAGE SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.178
+!MESSAGE Exception in thread "main" org.apache.cxf.tools.common.ToolException: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.179
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:410)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.179
+!MESSAGE at org.apache.cxf.tools.common.toolspec.ToolRunner.runTool(ToolRunner.java:105)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.179
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:113)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.180
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:86)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.180
+!MESSAGE at org.apache.cxf.maven_plugin.wsdl2java.ForkOnceWSDL2Java.main(ForkOnceWSDL2Java.java:51)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.180
+!MESSAGE Caused by: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.181
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:99)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.181
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.build(WSDLDefinitionBuilder.java:71)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.181
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.181
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:61)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.182
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.processWsdl(WSDLToJavaContainer.java:187)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.182
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:156)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.182
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:402)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.182
+!MESSAGE ... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.183
+!MESSAGE Caused by: javax.wsdl.WSDLException: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.183
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2198)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.183
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2390)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.183
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2422)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.184
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.loadDefinition(WSDLManagerImpl.java:266)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.184
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.getDefinition(WSDLManagerImpl.java:165)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.184
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:80)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.184
+!MESSAGE ... 10 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.185
+!MESSAGE Caused by: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.185
+!MESSAGE at java.base/java.io.FileInputStream.open0(Native Method)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.185
+!MESSAGE at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.185
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.186
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.186
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.186
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.187
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:654)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.187
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.187
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.188
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.188
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.188
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.189
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.189
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2188)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.189
+!MESSAGE ... 15 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.228
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:21.231
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.331
+!MESSAGE SLF4J: No SLF4J providers were found.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.331
+!MESSAGE SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.331
+!MESSAGE SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.671
+!MESSAGE Exception in thread "main" org.apache.cxf.tools.common.ToolException: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.672
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:410)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.672
+!MESSAGE at org.apache.cxf.tools.common.toolspec.ToolRunner.runTool(ToolRunner.java:105)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.673
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:113)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.673
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:86)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.673
+!MESSAGE at org.apache.cxf.maven_plugin.wsdl2java.ForkOnceWSDL2Java.main(ForkOnceWSDL2Java.java:51)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.674
+!MESSAGE Caused by: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.674
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:99)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.674
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.build(WSDLDefinitionBuilder.java:71)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.674
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.674
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:61)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.675
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.processWsdl(WSDLToJavaContainer.java:187)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.675
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:156)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.675
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:402)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.675
+!MESSAGE ... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.676
+!MESSAGE Caused by: javax.wsdl.WSDLException: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.676
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2198)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.676
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2390)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.676
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2422)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.677
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.loadDefinition(WSDLManagerImpl.java:266)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.677
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.getDefinition(WSDLManagerImpl.java:165)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.677
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:80)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.677
+!MESSAGE ... 10 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.677
+!MESSAGE Caused by: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.678
+!MESSAGE at java.base/java.io.FileInputStream.open0(Native Method)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.678
+!MESSAGE at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.678
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.678
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.679
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.679
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.679
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:654)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.679
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.679
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.680
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.680
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.680
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.680
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.681
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2188)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.681
+!MESSAGE ... 15 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.702
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:07:29.705
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:10.897
+!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.005
+!MESSAGE SLF4J: No SLF4J providers were found.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.006
+!MESSAGE SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.006
+!MESSAGE SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.329
+!MESSAGE Exception in thread "main" org.apache.cxf.tools.common.ToolException: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.329
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:410)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.329
+!MESSAGE at org.apache.cxf.tools.common.toolspec.ToolRunner.runTool(ToolRunner.java:105)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.330
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:113)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.330
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:86)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.330
+!MESSAGE at org.apache.cxf.maven_plugin.wsdl2java.ForkOnceWSDL2Java.main(ForkOnceWSDL2Java.java:51)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.330
+!MESSAGE Caused by: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.331
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:99)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.331
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.build(WSDLDefinitionBuilder.java:71)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.331
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.331
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:61)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.332
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.processWsdl(WSDLToJavaContainer.java:187)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.332
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:156)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.332
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:402)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.332
+!MESSAGE ... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.332
+!MESSAGE Caused by: javax.wsdl.WSDLException: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.333
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2198)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.333
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2390)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.333
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2422)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.333
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.loadDefinition(WSDLManagerImpl.java:266)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.334
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.getDefinition(WSDLManagerImpl.java:165)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.334
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:80)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.334
+!MESSAGE ... 10 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.334
+!MESSAGE Caused by: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.335
+!MESSAGE at java.base/java.io.FileInputStream.open0(Native Method)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.335
+!MESSAGE at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.335
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.335
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.335
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.336
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.336
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:654)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.336
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.336
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.337
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.337
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.337
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.337
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.338
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2188)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.338
+!MESSAGE ... 15 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.411
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.416
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:12.781
+!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.421
+!MESSAGE SLF4J: No SLF4J providers were found.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.422
+!MESSAGE SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.422
+!MESSAGE SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.762
+!MESSAGE Exception in thread "main" org.apache.cxf.tools.common.ToolException: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.763
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:410)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.763
+!MESSAGE at org.apache.cxf.tools.common.toolspec.ToolRunner.runTool(ToolRunner.java:105)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.764
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:113)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.764
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:86)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.765
+!MESSAGE at org.apache.cxf.maven_plugin.wsdl2java.ForkOnceWSDL2Java.main(ForkOnceWSDL2Java.java:51)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.765
+!MESSAGE Caused by: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.765
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:99)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.765
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.build(WSDLDefinitionBuilder.java:71)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.766
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.766
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:61)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.766
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.processWsdl(WSDLToJavaContainer.java:187)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.766
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:156)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.767
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:402)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.767
+!MESSAGE ... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.767
+!MESSAGE Caused by: javax.wsdl.WSDLException: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.767
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2198)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.768
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2390)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.768
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2422)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.768
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.loadDefinition(WSDLManagerImpl.java:266)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.768
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.getDefinition(WSDLManagerImpl.java:165)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.768
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:80)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.769
+!MESSAGE ... 10 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.769
+!MESSAGE Caused by: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.769
+!MESSAGE at java.base/java.io.FileInputStream.open0(Native Method)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.769
+!MESSAGE at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.770
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.770
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.770
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.771
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.771
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:654)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.771
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.771
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.771
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.772
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.772
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.772
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.773
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2188)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.773
+!MESSAGE ... 15 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.824
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:09:14.827
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:50.979
+!MESSAGE SLF4J: No SLF4J providers were found.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:50.979
+!MESSAGE SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:50.980
+!MESSAGE SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.314
+!MESSAGE Exception in thread "main" org.apache.cxf.tools.common.ToolException: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.315
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:410)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.315
+!MESSAGE at org.apache.cxf.tools.common.toolspec.ToolRunner.runTool(ToolRunner.java:105)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.315
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:113)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.316
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:86)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.316
+!MESSAGE at org.apache.cxf.maven_plugin.wsdl2java.ForkOnceWSDL2Java.main(ForkOnceWSDL2Java.java:51)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.316
+!MESSAGE Caused by: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.316
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:99)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.317
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.build(WSDLDefinitionBuilder.java:71)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.317
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.317
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:61)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.317
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.processWsdl(WSDLToJavaContainer.java:187)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.317
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:156)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.318
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:402)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.318
+!MESSAGE ... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.318
+!MESSAGE Caused by: javax.wsdl.WSDLException: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.318
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2198)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.319
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2390)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.319
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2422)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.319
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.loadDefinition(WSDLManagerImpl.java:266)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.319
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.getDefinition(WSDLManagerImpl.java:165)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.320
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:80)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.320
+!MESSAGE ... 10 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.320
+!MESSAGE Caused by: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.320
+!MESSAGE at java.base/java.io.FileInputStream.open0(Native Method)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.320
+!MESSAGE at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.321
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.321
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.321
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.321
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.321
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:654)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.322
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.322
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.322
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.322
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.322
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.323
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.323
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2188)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.323
+!MESSAGE ... 15 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.375
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:12:51.378
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.318
+!MESSAGE SLF4J: No SLF4J providers were found.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.319
+!MESSAGE SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.319
+!MESSAGE SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.643
+!MESSAGE Exception in thread "main" org.apache.cxf.tools.common.ToolException: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.644
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:410)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.644
+!MESSAGE at org.apache.cxf.tools.common.toolspec.ToolRunner.runTool(ToolRunner.java:105)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.644
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:113)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.645
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:86)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.645
+!MESSAGE at org.apache.cxf.maven_plugin.wsdl2java.ForkOnceWSDL2Java.main(ForkOnceWSDL2Java.java:51)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.645
+!MESSAGE Caused by: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.645
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:99)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.646
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.build(WSDLDefinitionBuilder.java:71)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.646
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.646
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:61)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.646
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.processWsdl(WSDLToJavaContainer.java:187)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.646
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:156)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.647
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:402)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.647
+!MESSAGE ... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.647
+!MESSAGE Caused by: javax.wsdl.WSDLException: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.647
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2198)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.648
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2390)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.648
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2422)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.648
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.loadDefinition(WSDLManagerImpl.java:266)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.648
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.getDefinition(WSDLManagerImpl.java:165)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.648
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:80)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.649
+!MESSAGE ... 10 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.649
+!MESSAGE Caused by: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.649
+!MESSAGE at java.base/java.io.FileInputStream.open0(Native Method)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.649
+!MESSAGE at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.649
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.650
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.650
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.650
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.650
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:654)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.651
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.651
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.651
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.651
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.651
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.652
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.652
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2188)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.652
+!MESSAGE ... 15 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.689
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:13:01.691
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:43.905
+!MESSAGE SLF4J: No SLF4J providers were found.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:43.906
+!MESSAGE SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:43.906
+!MESSAGE SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.250
+!MESSAGE Exception in thread "main" org.apache.cxf.tools.common.ToolException: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.250
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:410)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.251
+!MESSAGE at org.apache.cxf.tools.common.toolspec.ToolRunner.runTool(ToolRunner.java:105)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.251
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:113)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.251
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:86)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.252
+!MESSAGE at org.apache.cxf.maven_plugin.wsdl2java.ForkOnceWSDL2Java.main(ForkOnceWSDL2Java.java:51)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.252
+!MESSAGE Caused by: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.252
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:99)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.252
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.build(WSDLDefinitionBuilder.java:71)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.252
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.253
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:61)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.253
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.processWsdl(WSDLToJavaContainer.java:187)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.253
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:156)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.253
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:402)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.253
+!MESSAGE ... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.254
+!MESSAGE Caused by: javax.wsdl.WSDLException: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.254
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2198)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.254
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2390)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.254
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2422)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.255
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.loadDefinition(WSDLManagerImpl.java:266)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.255
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.getDefinition(WSDLManagerImpl.java:165)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.255
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:80)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.255
+!MESSAGE ... 10 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.255
+!MESSAGE Caused by: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.256
+!MESSAGE at java.base/java.io.FileInputStream.open0(Native Method)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.256
+!MESSAGE at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.256
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.256
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.257
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.257
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.257
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:654)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.257
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.258
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.258
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.258
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.258
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.258
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.259
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2188)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.259
+!MESSAGE ... 15 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.284
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:16:44.286
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.499
+!MESSAGE SLF4J: No SLF4J providers were found.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.500
+!MESSAGE SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.500
+!MESSAGE SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.831
+!MESSAGE Exception in thread "main" org.apache.cxf.tools.common.ToolException: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.832
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:410)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.832
+!MESSAGE at org.apache.cxf.tools.common.toolspec.ToolRunner.runTool(ToolRunner.java:105)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.832
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:113)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.833
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:86)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.833
+!MESSAGE at org.apache.cxf.maven_plugin.wsdl2java.ForkOnceWSDL2Java.main(ForkOnceWSDL2Java.java:51)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.833
+!MESSAGE Caused by: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.834
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:99)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.834
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.build(WSDLDefinitionBuilder.java:71)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.835
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.835
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:61)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.835
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.processWsdl(WSDLToJavaContainer.java:187)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.835
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:156)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.836
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:402)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.836
+!MESSAGE ... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.836
+!MESSAGE Caused by: javax.wsdl.WSDLException: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.837
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2198)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.837
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2390)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.837
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2422)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.837
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.loadDefinition(WSDLManagerImpl.java:266)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.838
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.getDefinition(WSDLManagerImpl.java:165)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.838
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:80)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.838
+!MESSAGE ... 10 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.838
+!MESSAGE Caused by: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.839
+!MESSAGE at java.base/java.io.FileInputStream.open0(Native Method)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.839
+!MESSAGE at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.839
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.839
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.839
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.840
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.840
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:654)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.840
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.840
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.840
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.841
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.841
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.841
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.842
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2188)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.842
+!MESSAGE ... 15 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.873
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:24.875
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:48.694
+!MESSAGE SLF4J: No SLF4J providers were found.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:48.695
+!MESSAGE SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:48.695
+!MESSAGE SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.028
+!MESSAGE Exception in thread "main" org.apache.cxf.tools.common.ToolException: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.028
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:410)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.028
+!MESSAGE at org.apache.cxf.tools.common.toolspec.ToolRunner.runTool(ToolRunner.java:105)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.029
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:113)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.029
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:86)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.029
+!MESSAGE at org.apache.cxf.maven_plugin.wsdl2java.ForkOnceWSDL2Java.main(ForkOnceWSDL2Java.java:51)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.029
+!MESSAGE Caused by: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.030
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:99)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.030
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.build(WSDLDefinitionBuilder.java:71)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.030
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.030
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:61)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.030
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.processWsdl(WSDLToJavaContainer.java:187)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.031
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:156)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.031
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:402)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.031
+!MESSAGE ... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.031
+!MESSAGE Caused by: javax.wsdl.WSDLException: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.032
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2198)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.032
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2390)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.032
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2422)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.032
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.loadDefinition(WSDLManagerImpl.java:266)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.032
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.getDefinition(WSDLManagerImpl.java:165)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.033
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:80)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.033
+!MESSAGE ... 10 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.033
+!MESSAGE Caused by: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.033
+!MESSAGE at java.base/java.io.FileInputStream.open0(Native Method)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.033
+!MESSAGE at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.034
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.034
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.034
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.034
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.035
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:654)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.035
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.035
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.035
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.035
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.036
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.036
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.036
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2188)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.036
+!MESSAGE ... 15 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.082
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:17:49.084
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.264
+!MESSAGE SLF4J: No SLF4J providers were found.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.265
+!MESSAGE SLF4J: Defaulting to no-operation (NOP) logger implementation
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.265
+!MESSAGE SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.622
+!MESSAGE Exception in thread "main" org.apache.cxf.tools.common.ToolException: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.622
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:410)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.623
+!MESSAGE at org.apache.cxf.tools.common.toolspec.ToolRunner.runTool(ToolRunner.java:105)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.623
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:113)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.623
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJava.run(WSDLToJava.java:86)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.623
+!MESSAGE at org.apache.cxf.maven_plugin.wsdl2java.ForkOnceWSDL2Java.main(ForkOnceWSDL2Java.java:51)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.624
+!MESSAGE Caused by: org.apache.cxf.wsdl11.WSDLRuntimeException: Fail to create wsdl definition file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.624
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:99)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.624
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.build(WSDLDefinitionBuilder.java:71)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.624
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.625
+!MESSAGE at org.apache.cxf.tools.wsdlto.frontend.jaxws.wsdl11.JAXWSDefinitionBuilder.build(JAXWSDefinitionBuilder.java:61)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.625
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.processWsdl(WSDLToJavaContainer.java:187)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.625
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:156)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.625
+!MESSAGE at org.apache.cxf.tools.wsdlto.WSDLToJavaContainer.execute(WSDLToJavaContainer.java:402)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.625
+!MESSAGE ... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.626
+!MESSAGE Caused by: javax.wsdl.WSDLException: WSDLException: faultCode=PARSER_ERROR: Problem parsing 'file:/C:%5cUsers%5calixc%5cDesktop%5cINSA%5c5A%5cService%20Architecture%5cVolunteerProject/src/main/resources/wsdl/VolunteerService.wsdl'.: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.626
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2198)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.626
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2390)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.626
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.readWSDL(WSDLReaderImpl.java:2422)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.627
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.loadDefinition(WSDLManagerImpl.java:266)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.627
+!MESSAGE at org.apache.cxf.wsdl11.WSDLManagerImpl.getDefinition(WSDLManagerImpl.java:165)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.627
+!MESSAGE at org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder.parseWSDL(WSDLDefinitionBuilder.java:80)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.627
+!MESSAGE ... 10 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.627
+!MESSAGE Caused by: java.io.FileNotFoundException: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\resources\wsdl\VolunteerService.wsdl (Le chemin d�acc�s sp�cifi� est introuvable)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.628
+!MESSAGE at java.base/java.io.FileInputStream.open0(Native Method)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.628
+!MESSAGE at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.628
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.628
+!MESSAGE at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.628
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.629
+!MESSAGE at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:180)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.629
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:654)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.629
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.629
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.630
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.630
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.630
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.630
+!MESSAGE at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.630
+!MESSAGE at com.ibm.wsdl.xml.WSDLReaderImpl.getDocument(WSDLReaderImpl.java:2188)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.631
+!MESSAGE ... 15 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.679
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:11.681
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:55.481
+!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:55.593
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:55.597
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:55.956
+!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:56.755
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:27:56.758
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:29:02.674
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:29:02.678
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:37:36.725
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:37:36.728
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:38:05.422
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:38:05.424
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:38:30.314
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:38:30.316
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:38:35.641
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:38:35.643
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:38:56.046
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:38:56.047
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:39:00.662
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:39:00.664
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:39:23.265
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:39:23.268
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2024-12-10 10:58:25.787 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-10 10:58:27.566
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-10 10:58:40.294
+!MESSAGE Logback config file: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 4 4 2024-12-10 10:58:40.758
+!MESSAGE Invalid workspace location to be set for Edge browser.
+!STACK 0
+java.net.URISyntaxException: Illegal character in path at index 44: file:/C:/Users/alixc/Desktop/INSA/5A/Service Architecture/.metadata/.plugins/org.eclipse.swt
+	at java.base/java.net.URI$Parser.fail(URI.java:2995)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3166)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3248)
+	at java.base/java.net.URI$Parser.parse(URI.java:3196)
+	at java.base/java.net.URI.<init>(URI.java:645)
+	at java.base/java.net.URL.toURI(URL.java:1220)
+	at org.eclipse.ui.internal.Workbench.setEdgeDataDirectory(Workbench.java:530)
+	at org.eclipse.ui.internal.Workbench.<init>(Workbench.java:461)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:598)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-10 10:58:45.101
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\alixc'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:59:58.038
+!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:59:58.282
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 10:59:58.294
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 11:00:03.840
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 11:00:03.845
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2024-12-10 13:35:54.646 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-10 13:36:06.429
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-10 13:36:13.817
+!MESSAGE Logback config file: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 4 4 2024-12-10 13:36:15.544
+!MESSAGE Invalid workspace location to be set for Edge browser.
+!STACK 0
+java.net.URISyntaxException: Illegal character in path at index 44: file:/C:/Users/alixc/Desktop/INSA/5A/Service Architecture/.metadata/.plugins/org.eclipse.swt
+	at java.base/java.net.URI$Parser.fail(URI.java:2995)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3166)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3248)
+	at java.base/java.net.URI$Parser.parse(URI.java:3196)
+	at java.base/java.net.URI.<init>(URI.java:645)
+	at java.base/java.net.URL.toURI(URL.java:1220)
+	at org.eclipse.ui.internal.Workbench.setEdgeDataDirectory(Workbench.java:530)
+	at org.eclipse.ui.internal.Workbench.<init>(Workbench.java:461)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:598)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-10 13:36:32.844
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\alixc'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-12-10 13:37:16.757
+!MESSAGE OperationCanceledException computing hover information in DemandServiceSOAP.java at offset 276
+!STACK 0
+org.eclipse.core.runtime.OperationCanceledException
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:239)
+	at org.eclipse.jdt.internal.core.ClassFile.getJarBinaryTypeInfo(ClassFile.java:225)
+	at org.eclipse.jdt.internal.core.ClassFile.getBinaryTypeInfo(ClassFile.java:186)
+	at org.eclipse.jdt.internal.core.ClassFile.buildStructure(ClassFile.java:78)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:246)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:127)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:569)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:292)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:278)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:1142)
+	at org.eclipse.jdt.internal.core.BinaryType.getFlags(BinaryType.java:357)
+	at org.eclipse.jdt.internal.core.SearchableEnvironmentRequestor.acceptType(SearchableEnvironmentRequestor.java:127)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypesInBinaryPackage(NameLookup.java:1510)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1442)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1348)
+	at org.eclipse.jdt.internal.core.NameLookup.findAllTypes(NameLookup.java:422)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1418)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1348)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:964)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:766)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:592)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:571)
+	at org.eclipse.jdt.internal.codeassist.SelectionEngine.select(SelectionEngine.java:1048)
+	at org.eclipse.jdt.internal.core.Openable.codeSelect(Openable.java:167)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:471)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:461)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getJavaElementsAt(AbstractJavaEditorTextHover.java:122)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo(JavaSourceHover.java:428)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo2(JavaSourceHover.java:399)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 11 :
+-----
+package fr.insa.soap;
+
+import jakarta.jws.WebMethod;
+import jakarta.jws.WebService;
+import jakarta.xml.ws.Endpoint;
+import java.sql.*;
+
+@WebService
+public class DemandServiceSOAP {
+
+	private static final String DB_URL = "jdbc:mysql://srv-bdens.insa-toulouse.fr:3306/|projec039";
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:150)
+		at org.eclipse.jdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getJavaElementsAt(AbstractJavaEditorTextHover.java:124)
+		... 6 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 13:37:25.512
+!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 13:37:26.428
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 13:37:26.455
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2024-12-10 16:03:38.076 -----------------------------------------------
+eclipse.buildId=4.34.0.20241128-0756
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-10 16:03:42.109
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-10 16:04:29.129
+!MESSAGE Logback config file: C:\Users\alixc\Desktop\INSA\5A\Service Architecture\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 4 4 2024-12-10 16:04:29.878
+!MESSAGE Invalid workspace location to be set for Edge browser.
+!STACK 0
+java.net.URISyntaxException: Illegal character in path at index 44: file:/C:/Users/alixc/Desktop/INSA/5A/Service Architecture/.metadata/.plugins/org.eclipse.swt
+	at java.base/java.net.URI$Parser.fail(URI.java:2995)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3166)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3248)
+	at java.base/java.net.URI$Parser.parse(URI.java:3196)
+	at java.base/java.net.URI.<init>(URI.java:645)
+	at java.base/java.net.URL.toURI(URL.java:1220)
+	at org.eclipse.ui.internal.Workbench.setEdgeDataDirectory(Workbench.java:530)
+	at org.eclipse.ui.internal.Workbench.<init>(Workbench.java:461)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:598)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-10 16:04:37.354
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\alixc'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:05:06.406
+!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:05:06.829
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:05:06.843
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:08:12.948
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:08:12.963
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:08:30.965
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:08:30.975
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:12:59.304
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:12:59.308
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:13:17.202
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:13:17.206
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:13:25.181
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:13:25.193
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:16:06.066
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:16:06.069
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:16:12.619
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-12-10 16:16:12.623
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-10 17:29:40.810
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-10 17:29:40.810
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-10 17:29:40.810
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-10 17:29:40.810
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-10 17:29:40.810
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-10 17:29:40.826
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
