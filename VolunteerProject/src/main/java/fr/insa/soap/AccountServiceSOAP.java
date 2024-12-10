@@ -4,6 +4,7 @@ import jakarta.jws.WebMethod;
 import jakarta.jws.WebService;
 import jakarta.xml.ws.Endpoint;
 import java.sql.*;
+import org.mindrot.jbcrypt.BCrypt;
 
 @WebService
 public class AccountServiceSOAP {
@@ -21,16 +22,18 @@ public class AccountServiceSOAP {
     }
 
     @WebMethod
-    public String createAccount(String name, String surname, String email, String birthdate, String type, String sex) {
+    public String createAccount(String name, String surname, String email, String password, String birthdate, String type, String sex) {
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
-            String sql = "INSERT INTO Users (Name, Surname, Email, Birthdate, Type, Sex) VALUES (?, ?, ?, ?, ?, ?)";
+        	String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
+            String sql = "INSERT INTO Users (Name, Surname, Email, Password, Birthdate, Type, Sex) VALUES (?, ?, ?, ?, ?, ?, ?)";
             try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
                 preparedStatement.setString(1, name);
                 preparedStatement.setString(2, surname);
                 preparedStatement.setString(3, email);
-                preparedStatement.setString(4, birthdate);
-                preparedStatement.setString(5, type);
-                preparedStatement.setString(6, sex);
+                preparedStatement.setString(4, hashedPassword);
+                preparedStatement.setString(5, birthdate);
+                preparedStatement.setString(6, type);
+                preparedStatement.setString(7, sex);
                 int rowsInserted = preparedStatement.executeUpdate();
                 return rowsInserted > 0 ? "Account created successfully." : "Failed to create account.";
             }
@@ -55,13 +58,21 @@ public class AccountServiceSOAP {
 
     @WebMethod
     public String login(String email, String password) {
-        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
-            String sql = "SELECT * FROM Users WHERE email = ? AND password = ?";
+    	try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+            String sql = "SELECT Password FROM Users WHERE Email = ?";
             try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
                 preparedStatement.setString(1, email);
-                preparedStatement.setString(2, password);
                 try (ResultSet resultSet = preparedStatement.executeQuery()) {
-                    return resultSet.next() ? "Login successful." : "Invalid credentials.";
+                    if (resultSet.next()) {
+                        String hashedPassword = resultSet.getString("Password");
+                        if (BCrypt.checkpw(password, hashedPassword)) {
+                            return "Login successful.";
+                        } else {
+                            return "Invalid credentials.";
+                        }
+                    } else {
+                        return "User not found.";
+                    }
                 }
             }
         } catch (SQLException e) {
@@ -70,7 +81,7 @@ public class AccountServiceSOAP {
     }
 
     public static void main(String[] args) {
-        String url = "http://localhost:8103/AccountServiceSOAP";
+        String url = "http://localhost:8081/AccountServiceSOAP";
         Endpoint.publish(url, new AccountServiceSOAP());
         System.out.println("Service running at " + url);
     }

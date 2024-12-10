@@ -17,6 +17,7 @@ CREATE TABLE Users (
     Name VARCHAR(100) NOT NULL,
     Surname VARCHAR(100) NOT NULL,
     Email VARCHAR(255) NOT NULL UNIQUE,
+    Password VARCHAR(255) NOT NULL,
     Birthdate VARCHAR(100) NOT NULL,
     Type ENUM('Helper', 'Client') NOT NULL,
     Sex ENUM('M', 'F', 'Autre') NOT NULL
@@ -28,10 +29,10 @@ DROP TABLE IF EXISTS Demands;
 CREATE TABLE Demands (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     User_ID INT NOT NULL,
-    Creation_date DATE NOT NULL,
+    Creation_date DATE, -- PAS OUBLIER REMETTRE
     Name VARCHAR(100) NOT NULL,
     Description TEXT,
-    State ENUM('Waiting', 'Ongoing', 'Done') NOT NULL DEFAULT 'Waiting',
+    State ENUM('Waiting', 'Validated', 'Ongoing', 'Done') NOT NULL DEFAULT 'Waiting',
     Priority ENUM('Low', 'Mid', 'High') NOT NULL DEFAULT 'Mid',
     FOREIGN KEY (User_ID) REFERENCES Users(ID) ON DELETE CASCADE
 );

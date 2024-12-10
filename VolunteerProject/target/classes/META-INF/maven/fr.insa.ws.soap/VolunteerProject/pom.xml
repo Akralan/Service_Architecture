@@ -41,5 +41,10 @@
         <artifactId>cxf-rt-transports-http</artifactId>
         <version>4.0.2</version>
     </dependency>
+    <dependency>
+	    <groupId>org.mindrot</groupId>
+	    <artifactId>jbcrypt</artifactId>
+	    <version>0.4</version>
+	</dependency>
 </dependencies>
 </project>

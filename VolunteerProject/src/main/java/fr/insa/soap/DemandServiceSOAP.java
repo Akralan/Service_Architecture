@@ -8,8 +8,8 @@ import java.sql.*;
 @WebService
 public class DemandServiceSOAP {
 
-	private static final String DB_URL = "jdbc:mysql://srv-bdens.insa-toulouse.fr:3306/project_gei_039";
-    private static final String DB_USER = "project_gei_039";
+	private static final String DB_URL = "jdbc:mysql://srv-bdens.insa-toulouse.fr:3306/projet_gei_039";
+    private static final String DB_USER = "projet_gei_039";
     private static final String DB_PASSWORD = "auteD5ro";
 
     static {
@@ -23,22 +23,6 @@ public class DemandServiceSOAP {
     @WebMethod
     public String addDemand(int userId, String name, String description, String priority) {
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
-            // Check if user is a 'Client'
-            String userTypeQuery = "SELECT Type FROM Users WHERE ID = ?";
-            try (PreparedStatement userTypeStmt = connection.prepareStatement(userTypeQuery)) {
-                userTypeStmt.setInt(1, userId);
-                try (ResultSet rs = userTypeStmt.executeQuery()) {
-                    if (rs.next()) {
-                        String userType = rs.getString("Type");
-                        if (!"Client".equals(userType)) {
-                            return "Only users of type 'Client' can add demands.";
-                        }
-                    } else {
-                        return "User not found.";
-                    }
-                }
-            }
-
             String sql = "INSERT INTO Demands (User_ID, Name, Description, Priority) VALUES (?, ?, ?, ?)";
             try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
                 preparedStatement.setInt(1, userId);
@@ -54,32 +38,28 @@ public class DemandServiceSOAP {
     }
 
     @WebMethod
-    public String updateDemand(int userId, int demandId, String name, String description, String priority) {
+    public String deleteDemand(int demandId) {
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
-            // Check if user is a 'Client' and owns the demand
-            String userTypeQuery = "SELECT Type, User_ID FROM Users INNER JOIN Demands ON Users.ID = Demands.User_ID WHERE Demands.ID = ?";
-            try (PreparedStatement userTypeStmt = connection.prepareStatement(userTypeQuery)) {
-                userTypeStmt.setInt(1, demandId);
-                try (ResultSet rs = userTypeStmt.executeQuery()) {
-                    if (rs.next()) {
-                        String userType = rs.getString("Type");
-                        int ownerId = rs.getInt("User_ID");
-                        if (!"Client".equals(userType) || ownerId != userId) {
-                            return "Only the owner of type 'Client' can update this demand.";
-                        }
-                    } else {
-                        return "Demand not found.";
-                    }
-                }
+            String sql = "DELETE FROM Demands WHERE ID = ?";
+            try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+                preparedStatement.setInt(1, demandId);
+                int rowsDeleted = preparedStatement.executeUpdate();
+                return rowsDeleted > 0 ? "Demand deleted successfully." : "Failed to delete demand.";
             }
+        } catch (SQLException e) {
+            return "Database error: " + e.getMessage();
+        }
+    }
 
-            String sql = "UPDATE Demands SET Name = ?, Description = ?, Priority = ?, State = 'Waiting' WHERE ID = ? AND User_ID = ?";
+    @WebMethod
+    public String updateDemand(int demandId, String name, String description, String priority) {
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+            String sql = "UPDATE Demands SET Name = ?, Description = ?, Priority = ?, State = 'Waiting' WHERE ID = ?";
             try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
                 preparedStatement.setString(1, name);
                 preparedStatement.setString(2, description);
                 preparedStatement.setString(3, priority);
                 preparedStatement.setInt(4, demandId);
-                preparedStatement.setInt(5, userId);
                 int rowsUpdated = preparedStatement.executeUpdate();
                 return rowsUpdated > 0 ? "Demand updated successfully." : "Failed to update demand.";
             }
@@ -89,29 +69,22 @@ public class DemandServiceSOAP {
     }
 
     @WebMethod
-    public String chooseDemand(int userId, int demandId) {
+    public String validateDemand(int demandId, boolean isValid, String reason) {
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
-            // Check if user is a 'Helper'
-            String userTypeQuery = "SELECT Type FROM Users WHERE ID = ?";
-            try (PreparedStatement userTypeStmt = connection.prepareStatement(userTypeQuery)) {
-                userTypeStmt.setInt(1, userId);
-                try (ResultSet rs = userTypeStmt.executeQuery()) {
-                    if (rs.next()) {
-                        String userType = rs.getString("Type");
-                        if (!"Helper".equals(userType)) {
-                            return "Only users of type 'Helper' can choose demands.";
-                        }
-                    } else {
-                        return "User not found.";
-                    }
+            if (isValid) {
+                String sql = "UPDATE Demands SET State = 'Validated' WHERE ID = ? AND State = 'Waiting'";
+                try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+                    preparedStatement.setInt(1, demandId);
+                    int rowsUpdated = preparedStatement.executeUpdate();
+                    return rowsUpdated > 0 ? "Demand validated successfully." : "Demand cannot be validated as it is not in 'Waiting' state.";
                 }
-            }
-
-            String sql = "UPDATE Demands SET State = 'Ongoing' WHERE ID = ?";
-            try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
-                preparedStatement.setInt(1, demandId);
-                int rowsUpdated = preparedStatement.executeUpdate();
-                return rowsUpdated > 0 ? "Demand chosen successfully." : "Failed to choose demand.";
+            } else {
+                String deleteSql = "DELETE FROM Demands WHERE ID = ?";
+                try (PreparedStatement preparedStatement = connection.prepareStatement(deleteSql)) {
+                    preparedStatement.setInt(1, demandId);
+                    int rowsDeleted = preparedStatement.executeUpdate();
+                    return rowsDeleted > 0 ? "Demand rejected and deleted. Reason: " + reason : "Failed to reject demand.";
+                }
             }
         } catch (SQLException e) {
             return "Database error: " + e.getMessage();
@@ -119,18 +92,16 @@ public class DemandServiceSOAP {
     }
 
     @WebMethod
-    public String validateDemand(int userId, int demandId) {
+    public String chooseDemand(int demandId) {
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
-            // Check if user is a 'Client' and owns the demand
-            String userTypeQuery = "SELECT Type, User_ID FROM Users INNER JOIN Demands ON Users.ID = Demands.User_ID WHERE Demands.ID = ?";
-            try (PreparedStatement userTypeStmt = connection.prepareStatement(userTypeQuery)) {
-                userTypeStmt.setInt(1, demandId);
-                try (ResultSet rs = userTypeStmt.executeQuery()) {
+            String stateCheckQuery = "SELECT State FROM Demands WHERE ID = ?";
+            try (PreparedStatement stateCheckStmt = connection.prepareStatement(stateCheckQuery)) {
+                stateCheckStmt.setInt(1, demandId);
+                try (ResultSet rs = stateCheckStmt.executeQuery()) {
                     if (rs.next()) {
-                        String userType = rs.getString("Type");
-                        int ownerId = rs.getInt("User_ID");
-                        if (!"Client".equals(userType) || ownerId != userId) {
-                            return "Only the owner of type 'Client' can validate this demand.";
+                        String currentState = rs.getString("State");
+                        if (!"Validated".equals(currentState)) {
+                            return "Demand must be in 'Validated' state before moving to 'Ongoing'.";
                         }
                     } else {
                         return "Demand not found.";
@@ -138,12 +109,40 @@ public class DemandServiceSOAP {
                 }
             }
 
-            String sql = "UPDATE Demands SET State = 'Done' WHERE ID = ? AND User_ID = ?";
+            String sql = "UPDATE Demands SET State = 'Ongoing' WHERE ID = ? AND State = 'Validated'";
             try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
                 preparedStatement.setInt(1, demandId);
-                preparedStatement.setInt(2, userId);
                 int rowsUpdated = preparedStatement.executeUpdate();
-                return rowsUpdated > 0 ? "Demand validated successfully." : "Failed to validate demand.";
+                return rowsUpdated > 0 ? "Demand chosen successfully." : "Demand cannot be chosen as it is not in 'Validated' state.";
+            }
+        } catch (SQLException e) {
+            return "Database error: " + e.getMessage();
+        }
+    }
+
+    @WebMethod
+    public String finishDemand(int demandId) {
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+            String stateCheckQuery = "SELECT State FROM Demands WHERE ID = ?";
+            try (PreparedStatement stateCheckStmt = connection.prepareStatement(stateCheckQuery)) {
+                stateCheckStmt.setInt(1, demandId);
+                try (ResultSet rs = stateCheckStmt.executeQuery()) {
+                    if (rs.next()) {
+                        String currentState = rs.getString("State");
+                        if (!"Ongoing".equals(currentState)) {
+                            return "Demand must be in 'Ongoing' state before moving to 'Done'.";
+                        }
+                    } else {
+                        return "Demand not found.";
+                    }
+                }
+            }
+
+            String sql = "UPDATE Demands SET State = 'Done' WHERE ID = ? AND State = 'Ongoing'";
+            try (PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+                preparedStatement.setInt(1, demandId);
+                int rowsUpdated = preparedStatement.executeUpdate();
+                return rowsUpdated > 0 ? "Demand finished successfully." : "Demand cannot be finished as it is not in 'Ongoing' state.";
             }
         } catch (SQLException e) {
             return "Database error: " + e.getMessage();
@@ -151,7 +150,7 @@ public class DemandServiceSOAP {
     }
 
     public static void main(String[] args) {
-        String url = "http://localhost:8080/DemandServiceSOAP";
+        String url = "http://localhost:8083/DemandServiceSOAP";
         Endpoint.publish(url, new DemandServiceSOAP());
         System.out.println("Service running at " + url);
     }
