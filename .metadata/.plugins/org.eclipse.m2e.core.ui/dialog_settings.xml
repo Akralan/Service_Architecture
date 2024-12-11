@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\java\fr\insa\soap\AccountServiceSOAP.java"/>
+			<item value="C:\Users\alixc\Desktop\INSA\5A\Service Architecture\VolunteerProject\src\main\java\fr\insa\soap"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -44,11 +46,13 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="fr.insa.soa"/>
 			<item value="fr.insa.ws.soap"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="VolunteerProjectRest"/>
 			<item value="VolunteerProject"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -64,6 +68,14 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
