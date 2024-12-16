@@ -81,6 +81,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\alixc\Desktop\INSA\5A\Service Architecture\AccountDeleteMS"/>
 			<item value="C:\Users\alixc\Desktop\INSA\5A\Service Architecture\DemandMS"/>
 			<item value="C:\Users\alixc\Desktop\INSA\5A\Service Architecture\AccountLoginMS"/>
 			<item value="C:\Users\alixc\Desktop\INSA\5A\Service Architecture\AccountCreationMS"/>

@@ -29,6 +29,7 @@ DROP TABLE IF EXISTS Demands;
 CREATE TABLE Demands (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     User_ID INT NOT NULL,
+    Helper_ID INT,
     Creation_date DATETIME NOT NULL,
     Name VARCHAR(100) NOT NULL,
     Description TEXT,
