@@ -36,6 +36,20 @@ CREATE TABLE Demands (
     Priority ENUM('Low', 'Mid', 'High') NOT NULL DEFAULT 'Mid',
     FOREIGN KEY (User_ID) REFERENCES Users(ID) ON DELETE CASCADE
 );
+
+-- Suppression et création de la table Feedbacks
+DROP TABLE IF EXISTS Feedbacks;
+
+CREATE TABLE Feedbacks (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Demand_ID INT NOT NULL,
+    User_ID INT NOT NULL,
+    Content TEXT,
+    Note INT DEFAULT 3 CHECK (Note >= 0 AND Note <= 5),
+    Creation_date DATETIME NOT NULL,
+    FOREIGN KEY (Demand_ID) REFERENCES Demands(ID) ON DELETE CASCADE,
+    FOREIGN KEY (User_ID) REFERENCES Users(ID) ON DELETE CASCADE
+);
 """
 
 try:
