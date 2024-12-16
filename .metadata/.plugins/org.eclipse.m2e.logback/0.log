@@ -3902,3 +3902,33 @@ org.eclipse.core.runtime.CoreException: Launch configuration AccountLoginMS refe
 2024-12-11 16:37:28,666 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-12-11 16:37:28,669 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\alixc\Desktop\INSA\5A\Service Architecture\AccountLoginMS\src\test\resources
 2024-12-14 18:32:42,399 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-12-16 14:58:53,201 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-12-16 14:59:19,583 [Worker-1: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fr.insa.mas:FeedbackMS:0.0.1-SNAPSHOT @ C:\Users\alixc\Desktop\INSA\5A\Service Architecture\FeedbackMS\pom.xml.
+2024-12-16 14:59:20,314 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /FeedbackMS/src/main/java
+2024-12-16 14:59:20,316 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /FeedbackMS/src/main/resources
+2024-12-16 14:59:20,322 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /FeedbackMS/src/main/resources
+2024-12-16 14:59:20,326 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /FeedbackMS/src/test/java
+2024-12-16 14:59:20,327 [Worker-1: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /FeedbackMS/src/test/resources
+2024-12-16 14:59:20,734 [Worker-1: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2024-12-16 14:59:21,564 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-16 14:59:21,584 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-16 14:59:21,591 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\alixc\Desktop\INSA\5A\Service Architecture\FeedbackMS\src\test\resources
+2024-12-16 15:00:35,534 [Worker-17: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fr.insa.mas:AccountCreationMS:0.0.1-SNAPSHOT @ C:\Users\alixc\Desktop\INSA\5A\Service Architecture\AccountCreationMS\pom.xml.
+2024-12-16 15:00:35,712 [Worker-17: Importing Maven projects] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2024-12-16 15:00:35,949 [Worker-17: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AccountCreationMS/src/main/java
+2024-12-16 15:00:35,950 [Worker-17: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AccountCreationMS/src/main/resources
+2024-12-16 15:00:35,950 [Worker-17: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AccountCreationMS/src/main/resources
+2024-12-16 15:00:35,951 [Worker-17: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AccountCreationMS/src/test/java
+2024-12-16 15:00:35,951 [Worker-17: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AccountCreationMS/src/test/resources
+2024-12-16 15:00:36,052 [Worker-17: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2024-12-16 15:00:36,436 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-16 15:00:36,449 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-16 15:00:36,453 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\alixc\Desktop\INSA\5A\Service Architecture\AccountCreationMS\src\test\resources
+2024-12-16 15:01:34,838 [Worker-20: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fr.insa.mas:FeedbackMS:0.0.1-SNAPSHOT @ C:\Users\alixc\Desktop\INSA\5A\Service Architecture\FeedbackMS\pom.xml.
+2024-12-16 15:01:34,942 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2024-12-16 15:01:35,183 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-16 15:01:35,184 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-16 15:01:35,188 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\alixc\Desktop\INSA\5A\Service Architecture\FeedbackMS\src\test\resources
+2024-12-16 15:01:36,334 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-12-16 15:01:36,344 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-12-16 15:01:36,346 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\alixc\Desktop\INSA\5A\Service Architecture\FeedbackMS\src\test\resources

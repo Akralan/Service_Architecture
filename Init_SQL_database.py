@@ -29,7 +29,7 @@ DROP TABLE IF EXISTS Demands;
 CREATE TABLE Demands (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     User_ID INT NOT NULL,
-    Creation_date DATE, -- PAS OUBLIER REMETTRE
+    Creation_date DATETIME NOT NULL,
     Name VARCHAR(100) NOT NULL,
     Description TEXT,
     State ENUM('Waiting', 'Validated', 'Ongoing', 'Done') NOT NULL DEFAULT 'Waiting',

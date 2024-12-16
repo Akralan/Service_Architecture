@@ -10,7 +10,7 @@ import java.util.Date;
 
 @SpringBootApplication
 @RestController
-@RequestMapping("/comments")
+@RequestMapping("/feedback")
 public class FeedbackMsApplication {
 
     private static final String DB_URL = "jdbc:mysql://srv-bdens.insa-toulouse.fr:3306/projet_gei_039";
@@ -57,7 +57,7 @@ public class FeedbackMsApplication {
             }
 
             // Insérer le commentaire
-            String sql = "INSERT INTO Comments (Demand_ID, User_ID, Content, Creation_date) VALUES (?, ?, ?, NOW())";
+            String sql = "INSERT INTO Feedbacks (Demand_ID, User_ID, Content, Creation_date) VALUES (?, ?, ?, NOW())";
             try (PreparedStatement statement = connection.prepareStatement(sql)) {
                 statement.setInt(1, request.getDemandId());
                 statement.setInt(2, request.getUserId());
@@ -76,7 +76,7 @@ public class FeedbackMsApplication {
     public List<Feedback> getCommentsByDemand(@PathVariable int demandId) {
         List<Feedback> comments = new ArrayList<>();
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
-            String sql = "SELECT c.*, u.Type as UserType FROM Comments c " +
+            String sql = "SELECT c.*, u.Type as UserType FROM Feedbacks c " +
                         "JOIN Users u ON c.User_ID = u.ID " +
                         "WHERE c.Demand_ID = ? " +
                         "ORDER BY c.Creation_date DESC";
@@ -106,7 +106,7 @@ public class FeedbackMsApplication {
     public String updateComment(@RequestBody FeedbackUpdateRequest request) {
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
             // Vérifier que l'utilisateur est propriétaire du commentaire
-            String checkOwnerSql = "SELECT User_ID FROM Comments WHERE ID = ?";
+            String checkOwnerSql = "SELECT User_ID FROM Feedbacks WHERE ID = ?";
             try (PreparedStatement checkStatement = connection.prepareStatement(checkOwnerSql)) {
                 checkStatement.setInt(1, request.getFeedbackId());
                 try (ResultSet rs = checkStatement.executeQuery()) {
@@ -120,7 +120,7 @@ public class FeedbackMsApplication {
             }
 
             // Mettre à jour le commentaire
-            String sql = "UPDATE Comments SET Content = ? WHERE ID = ? AND User_ID = ?";
+            String sql = "UPDATE Feedbacks SET Content = ? WHERE ID = ? AND User_ID = ?";
             try (PreparedStatement statement = connection.prepareStatement(sql)) {
                 statement.setString(1, request.getContent());
                 statement.setInt(2, request.getFeedbackId());
@@ -139,7 +139,7 @@ public class FeedbackMsApplication {
     public String deleteComment(@PathVariable int commentId, @PathVariable int userId) {
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
             // Vérifier que l'utilisateur est propriétaire du commentaire
-            String checkOwnerSql = "SELECT User_ID FROM Comments WHERE ID = ?";
+            String checkOwnerSql = "SELECT User_ID FROM Feedbacks WHERE ID = ?";
             try (PreparedStatement checkStatement = connection.prepareStatement(checkOwnerSql)) {
                 checkStatement.setInt(1, commentId);
                 try (ResultSet rs = checkStatement.executeQuery()) {
@@ -153,7 +153,7 @@ public class FeedbackMsApplication {
             }
 
             // Supprimer le commentaire
-            String sql = "DELETE FROM Comments WHERE ID = ? AND User_ID = ?";
+            String sql = "DELETE FROM Feedbacks WHERE ID = ? AND User_ID = ?";
             try (PreparedStatement statement = connection.prepareStatement(sql)) {
                 statement.setInt(1, commentId);
                 statement.setInt(2, userId);
