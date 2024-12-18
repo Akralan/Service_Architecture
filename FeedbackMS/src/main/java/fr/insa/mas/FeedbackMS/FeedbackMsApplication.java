@@ -71,33 +71,56 @@ public class FeedbackMsApplication {
         }
     }
 
-    // Récupérer tous les commentaires d'une demande
     @GetMapping("/demand/{demandId}")
     public List<Feedback> getCommentsByDemand(@PathVariable int demandId) {
+
+        System.out.println("Tentative de récupération des commentaires pour la demande ID : " + demandId);
+
         List<Feedback> comments = new ArrayList<>();
+
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+            System.out.println("Connexion à la base de données réussie.");
+
             String sql = "SELECT c.*, u.Type as UserType FROM Feedbacks c " +
-                        "JOIN Users u ON c.User_ID = u.ID " +
-                        "WHERE c.Demand_ID = ? " +
-                        "ORDER BY c.Creation_date DESC";
-            
+                         "JOIN Users u ON c.User_ID = u.ID " +
+                         "WHERE c.Demand_ID = ? " +
+                         "ORDER BY c.Creation_date DESC";
+
             try (PreparedStatement statement = connection.prepareStatement(sql)) {
                 statement.setInt(1, demandId);
+                System.out.println("Requête SQL préparée : " + sql + " avec Demand_ID = " + demandId);
+
                 try (ResultSet rs = statement.executeQuery()) {
+                    boolean hasResults = false;
+
                     while (rs.next()) {
-                    	Feedback comment = new Feedback();
+                        hasResults = true;
+                        Feedback comment = new Feedback();
                         comment.setId(rs.getInt("ID"));
                         comment.setDemandId(rs.getInt("Demand_ID"));
                         comment.setUserId(rs.getInt("User_ID"));
                         comment.setContent(rs.getString("Content"));
                         comment.setCreationDate(rs.getTimestamp("Creation_date"));
+
                         comments.add(comment);
+
+                        System.out.println("Commentaire récupéré : ID=" + comment.getId() 
+                            + ", User_ID=" + comment.getUserId() 
+                            + ", Contenu=" + comment.getContent());
+                    }
+
+                    if (!hasResults) {
+                        System.out.println("Aucun commentaire trouvé pour la demande ID : " + demandId);
                     }
                 }
             }
         } catch (SQLException e) {
+            System.out.println("Erreur de base de données lors de la récupération des commentaires pour la demande ID : " 
+                    + demandId + ". Message : " + e.getMessage());
             e.printStackTrace();
         }
+
+        System.out.println("Nombre total de commentaires récupérés pour la demande ID " + demandId + " : " + comments.size());
         return comments;
     }
 

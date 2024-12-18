@@ -226,12 +226,13 @@ public class DemandMsApplication {
         return demands;
     }
     
-    @GetMapping("/get-all")
-    public List<Demand> getDemandsByUser() {
+    @GetMapping("/get-all/{userId}")
+    public List<Demand> getAllDemandsByUser(@PathVariable int userId) {
         List<Demand> demands = new ArrayList<>();
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
-            String sql = "SELECT ID, User_ID, Creation_date, Name, Description, State, Priority FROM Demands WHERE State = 'Validated'";
+            String sql = "SELECT ID, User_ID, Name, Description, State, Priority FROM Demands WHERE State = 'Validated' UNION SELECT ID, User_ID, Name, Description, State, Priority FROM Demands WHERE Helper_ID = ?";
             try (PreparedStatement statement = connection.prepareStatement(sql)) {
+            	statement.setInt(1, userId);
                 try (ResultSet rs = statement.executeQuery()) {
                     while (rs.next()) {
                         Demand demand = new Demand();
