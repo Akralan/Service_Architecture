@@ -1,0 +1,11 @@
+fr\insa\client\config\AppConfig.class
+fr\insa\client\model\AccountLogin.class
+fr\insa\client\AccountClientApplication.class
+fr\insa\client\controller\AccountController.class
+fr\insa\client\controller\DemandController.class
+fr\insa\client\model\Feedback.class
+fr\insa\client\service\DemandService.class
+fr\insa\client\model\Account.class
+fr\insa\client\service\AccountService.class
+fr\insa\client\model\Demand.class
+fr\insa\client\model\ChooseRequest.class

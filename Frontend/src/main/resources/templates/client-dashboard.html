@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .toast-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1060;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .card-header {
+            border-radius: 15px 15px 0 0 !important;
+            border-bottom: none;
+        }
+        
+        .table {
+            margin-bottom: 0;
+        }
+        
+        .table th {
+            border-top: none;
+            font-weight: 600;
+            color: #495057;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+        
+        .table td {
+            vertical-align: middle;
+            color: #6c757d;
+        }
+        
+        .priority-high {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        
+        .priority-medium {
+            color: #ffc107;
+            font-weight: bold;
+        }
+        
+        .priority-low {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .state-badge {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        .state-waiting {
+            background-color: #e9ecef;
+            color: #495057;
+        }
+        
+        .state-validated {
+            background-color: #cff4fc;
+            color: #055160;
+        }
+        
+        .state-ongoing {
+            background-color: #fff3cd;
+            color: #664d03;
+        }
+        
+        .state-finished {
+            background-color: #d1e7dd;
+            color: #0f5132;
+        }
+        
+        .btn {
+            border-radius: 20px;
+            padding: 8px 20px;
+        }
+        
+        .btn-success {
+            background-color: #20c997;
+            border: none;
+        }
+        
+        .btn-success:hover {
+            background-color: #1ba37f;
+        }
+    </style>
+</head>
+<body>
+    <!-- Toast Container -->
+    <div class="toast-container">
+        <div id="notificationToast" class="toast align-items-center text-white border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <!-- Message will be inserted here -->
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0">Welcome, <span class="text-primary" th:text="${userType}">Client</span>!</h2>
+                    <div>
+                        <button class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#newDemandModal">
+                            <i class="fas fa-plus me-2"></i>New Demand
+                        </button>
+                        <button class="btn btn-light me-2" id="refreshBtn">
+                            <i class="fas fa-sync-alt me-2"></i>Refresh
+                        </button>
+                        <a href="/" class="btn btn-outline-danger">
+                            <i class="fas fa-sign-out-alt me-2"></i>Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-header bg-white py-3">
+                        <h4 class="mb-0 text-primary">My Demands</h4>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="ps-4">Name</th>
+                                        <th>Description</th>
+                                        <th>Priority</th>
+                                        <th>Status</th>
+                                        <th class="text-end pe-4">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr th:each="demand : ${demands}">
+                                        <td th:text="${demand.name}">Name</td>
+                                        <td th:text="${demand.description}">Description</td>
+                                        <td th:text="${demand.priority}">Priority</td>
+                                        <td th:text="${demand.state}">State</td>
+                                        <td>
+                                            <button th:if="${demand.state == 'Done'}" class="btn btn-primary btn-sm" th:onclick="'showFeedbackModal(' + ${demand.id} + ')'">
+                                                <i class="fas fa-comment"></i> Feedback
+                                            </button>
+                                            <button th:if="${demand.state == 'Waiting' || demand.state == 'InProgress'}" class="btn btn-danger btn-sm" th:onclick="'deleteDemand(' + ${demand.id} + ')'">
+                                                <i class="fas fa-trash"></i> Delete
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Demand Modal -->
+    <div class="modal fade" id="newDemandModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">New Demand</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="newDemandForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea class="form-control" id="description" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="priority" class="form-label">Priority</label>
+                            <select class="form-select" id="priority" required>
+                                <option value="Low">Low</option>
+                                <option value="Mid">Medium</option>
+                                <option value="High">High</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="submitNewDemand()">Create Demand</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Modal -->
+    <div class="modal fade" id="feedbackModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">Add Feedback</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Zone des feedbacks existants -->
+                    <div id="existingFeedbacks" class="mb-4">
+                        <!-- Les feedbacks seront insérés ici -->
+                    </div>
+                    <form id="feedbackForm">
+                        <input type="hidden" id="feedbackDemandId">
+                        <div class="mb-3">
+                            <label for="feedbackContent" class="form-label">Your Feedback</label>
+                            <textarea class="form-control" id="feedbackContent" rows="3" required placeholder="Write your feedback here..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="submitFeedback()">Submit Feedback</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showNotification(message, type = 'success') {
+            const toast = document.getElementById('notificationToast');
+            const toastBody = toast.querySelector('.toast-body');
+            
+            toast.className = 'toast align-items-center text-white border-0';
+            toast.classList.add('bg-' + type);
+            
+            toastBody.textContent = message;
+            
+            const bsToast = new bootstrap.Toast(toast);
+            bsToast.show();
+        }
+
+        function refreshDemands() {
+            fetch('/api/demands/refresh')
+                .then(response => response.json())
+                .then(demands => {
+                    const tbody = document.querySelector('table tbody');
+                    tbody.innerHTML = '';
+                    
+                    demands.forEach(demand => {
+                        console.log('Demand state:', demand.state); // Debug line
+                        const tr = document.createElement('tr');
+                        const buttons = [];
+                        
+                        // Bouton Finish quand l'état est "Ongoing"
+                        if (demand.state === "Ongoing") {
+                            buttons.push(`
+                                <button class="btn btn-success btn-sm" onclick="finishDemand(${demand.id})">
+                                    <i class="fas fa-check me-1"></i>Finish
+                                </button>
+                            `);
+                        }
+                        
+                        // Bouton Feedback pour les demandes finies
+                        if (demand.state === "Done") {
+                            buttons.push(`
+                                <button class="btn btn-primary btn-sm" onclick="showFeedbackModal(${demand.id})">
+                                    <i class="fas fa-comment me-1"></i>Feedback
+                                </button>
+                            `);
+                        }
+                        
+                        const priorityClass = {
+                            'High': 'priority-high',
+                            'Mid': 'priority-medium',
+                            'Low': 'priority-low'
+                        }[demand.priority] || '';
+                        
+                        const stateClass = {
+                            'Waiting': 'state-waiting',
+                            'Validated': 'state-validated',
+                            'Ongoing': 'state-ongoing',
+                            'Finished': 'state-finished'
+                        }[demand.state] || '';
+                        
+                        tr.innerHTML = `
+                            <td class="ps-4">${demand.name}</td>
+                            <td>${demand.description}</td>
+                            <td><span class="${priorityClass}">${demand.priority}</span></td>
+                            <td><span class="state-badge ${stateClass}">${demand.state}</span></td>
+                            <td class="text-end pe-4">
+                                ${buttons.join('')}
+                            </td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+                    showNotification('Demands refreshed successfully', 'success');
+                })
+                .catch(error => {
+                    console.error('Error refreshing demands:', error);
+                    showNotification('Error refreshing demands', 'danger');
+                });
+        }
+
+        function finishDemand(id) {
+            if (!confirm('Are you sure you want to mark this demand as finished?')) {
+                return;
+            }
+            
+            fetch(`/api/demands/finish/${id}`, { method: 'PUT' })
+                .then(response => response.text())
+                .then(message => {
+                    showNotification('Demand finished successfully', 'success');
+                    refreshDemands();
+                })
+                .catch(error => {
+                    console.error('Error finishing demand:', error);
+                    showNotification('Error finishing demand', 'danger');
+                });
+        }
+
+        function submitNewDemand() {
+            const name = document.getElementById('name').value;
+            const description = document.getElementById('description').value;
+            const priority = document.getElementById('priority').value;
+            
+            const demand = {
+                name: name,
+                description: description,
+                priority: priority,
+                state: 'Waiting'
+            };
+            
+            fetch('/api/demands/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(demand)
+            })
+            .then(response => response.text())
+            .then(result => {
+                showNotification('Demand created successfully', 'success');
+                document.getElementById('newDemandForm').reset();
+                const modal = bootstrap.Modal.getInstance(document.getElementById('newDemandModal'));
+                modal.hide();
+                refreshDemands();
+            })
+            .catch(error => showNotification('Error creating demand: ' + error, 'danger'));
+        }
+
+        function showFeedbackModal(demandId) {
+            document.getElementById('feedbackDemandId').value = demandId;
+            
+            // Récupérer les feedbacks existants
+            fetch(`/api/feedback/demand/${demandId}`)
+                .then(response => response.json())
+                .then(feedbacks => {
+                    const feedbacksContainer = document.getElementById('existingFeedbacks');
+                    feedbacksContainer.innerHTML = ''; // Nettoyer les anciens feedbacks
+                    
+                    if (feedbacks && feedbacks.length > 0) {
+                        const feedbacksList = document.createElement('div');
+                        feedbacksList.className = 'list-group mb-3';
+                        
+                        feedbacks.forEach(feedback => {
+                            const feedbackItem = document.createElement('div');
+                            feedbackItem.className = 'list-group-item';
+                            feedbackItem.innerHTML = `
+                                <div class="d-flex justify-content-between">
+                                    <small class="text-muted">User #${feedback.userId}</small>
+                                </div>
+                                <p class="mb-1">${feedback.content}</p>
+                            `;
+                            feedbacksList.appendChild(feedbackItem);
+                        });
+                        
+                        feedbacksContainer.innerHTML = '<h6 class="mb-3">Previous Feedbacks:</h6>';
+                        feedbacksContainer.appendChild(feedbacksList);
+                    }
+                    
+                    // Afficher le modal
+                    const modal = new bootstrap.Modal(document.getElementById('feedbackModal'));
+                    modal.show();
+                })
+                .catch(error => {
+                    console.error('Error fetching feedbacks:', error);
+                    showNotification('Error loading feedbacks: ' + error, 'danger');
+                    
+                    // Afficher quand même le modal en cas d'erreur
+                    const modal = new bootstrap.Modal(document.getElementById('feedbackModal'));
+                    modal.show();
+                });
+        }
+
+        function submitFeedback() {
+            const data = {
+                demandId: parseInt(document.getElementById('feedbackDemandId').value),
+                content: document.getElementById('feedbackContent').value
+            };
+
+            fetch('/api/feedback/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.text())
+            .then(result => {
+                // Fermer le modal
+                const modal = bootstrap.Modal.getInstance(document.getElementById('feedbackModal'));
+                modal.hide();
+                
+                // Reset le formulaire
+                document.getElementById('feedbackForm').reset();
+                
+                // Afficher la notification
+                showNotification(result);
+            })
+            .catch(error => showNotification('Error submitting feedback: ' + error, 'danger'));
+        }
+
+        document.getElementById('refreshBtn').addEventListener('click', refreshDemands);
+        
+        // Charger les demandes au démarrage
+        refreshDemands();
+    </script>
+</body>
+</html>

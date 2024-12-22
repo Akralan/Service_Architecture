@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Account Management</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+        }
+        .card-header {
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+            border-radius: 15px 15px 0 0 !important;
+        }
+        .btn-primary {
+            background-color: #0d6efd;
+            border: none;
+            padding: 10px 20px;
+        }
+        .btn-success {
+            background-color: #198754;
+            border: none;
+            padding: 10px 20px;
+        }
+        .form-control {
+            border-radius: 8px;
+            padding: 10px 15px;
+        }
+        .form-control:focus {
+            box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+        }
+        .alert {
+            border-radius: 10px;
+        }
+        .nav-pills .nav-link {
+            color: #6c757d;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+        .nav-pills .nav-link.active {
+            background-color: #0d6efd;
+            color: white;
+        }
+        .form-container {
+            display: none;
+        }
+        .form-container.active {
+            display: block;
+        }
+        .switch-text {
+            cursor: pointer;
+            color: #0d6efd;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div th:if="${message}" class="alert alert-info shadow-sm mb-4 text-center" role="alert">
+            <i class="fas fa-info-circle me-2"></i>
+            <span th:text="${message}"></span>
+        </div>
+
+        <div class="card">
+            <div class="card-header p-4">
+                <ul class="nav nav-pills nav-fill mb-0" id="formTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="login-tab" data-bs-toggle="pill" data-bs-target="#login-form" type="button" role="tab">
+                            <i class="fas fa-sign-in-alt me-2"></i>Login
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="register-tab" data-bs-toggle="pill" data-bs-target="#register-form" type="button" role="tab">
+                            <i class="fas fa-user-plus me-2"></i>Register
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="card-body p-4">
+                <div class="tab-content">
+                    <!-- Login Form -->
+                    <div class="tab-pane fade show active" id="login-form" role="tabpanel">
+                        <form th:action="@{/login}" method="post" th:object="${loginRequest}">
+                            <div class="mb-4">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" th:field="*{email}" id="login-email" placeholder="Email" required>
+                                    <label for="login-email">Email</label>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" th:field="*{password}" id="login-password" placeholder="Password" required>
+                                    <label for="login-password">Password</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100">
+                                <i class="fas fa-sign-in-alt me-2"></i>Login
+                            </button>
+                            <div class="text-center mt-3">
+                                <span>Don't have an account? </span>
+                                <span class="switch-text" data-bs-toggle="pill" data-bs-target="#register-form">Register here</span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Register Form -->
+                    <div class="tab-pane fade" id="register-form" role="tabpanel">
+                        <form th:action="@{/register}" method="post" th:object="${account}">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" th:field="*{name}" id="register-name" placeholder="Name" required>
+                                        <label for="register-name">Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" th:field="*{surname}" id="register-surname" placeholder="Surname" required>
+                                        <label for="register-surname">Surname</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" th:field="*{email}" id="register-email" placeholder="Email" required>
+                                        <label for="register-email">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" th:field="*{password}" id="register-password" placeholder="Password" required>
+                                        <label for="register-password">Password</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control" th:field="*{birthdate}" id="register-birthdate" required>
+                                        <label for="register-birthdate">Birthdate</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" th:field="*{type}" id="register-type">
+                                            <option value="Helper">Helper</option>
+                                            <option value="Client">Client</option>
+                                        </select>
+                                        <label for="register-type">Type</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" th:field="*{sex}" id="register-sex">
+                                            <option value="M">Male</option>
+                                            <option value="F">Female</option>
+                                            <option value="Autre">Other</option>
+                                        </select>
+                                        <label for="register-sex">Sex</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        <i class="fas fa-user-plus me-2"></i>Create Account
+                                    </button>
+                                    <div class="text-center mt-3">
+                                        <span>Already have an account? </span>
+                                        <span class="switch-text" data-bs-toggle="pill" data-bs-target="#login-form">Login here</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
